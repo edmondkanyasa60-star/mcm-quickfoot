@@ -1,0 +1,84 @@
+/* Football App Theme - Red, Blue, White */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/Camp_Nou_stadium.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 70px;  /* space for fixed nav */
+  padding-bottom: 50px; /* space for fixed footer */
+}
+
+/* Header */
+header {
+  background-color: #00274d; /* dark blue */
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation bar */
+nav {
+  background-color: rgba(0, 39, 77, 0.95); /* dark blue with transparency */
+  padding: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e10600; /* red on hover */
+}
+
+/* Buttons */
+button {
+  background-color: rgba(225, 6, 0, 0.8); /* red with transparency */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgba(192, 4, 0, 0.9); /* darker red on hover */
+  transform: scale(1.05);
+}
+
+/* Main content box */
+main {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  padding: 20px;
+  border-radius: 16px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 39, 77, 0.95); /* dark blue with transparency */
+  color: white;
+  padding: 12px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
