@@ -1,84 +1,61 @@
-/* Football App Theme - Red, Blue, White */
-
-body {
+/* General Reset */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/Camp_Nou_stadium.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 70px;  /* space for fixed nav */
-  padding-bottom: 50px; /* space for fixed footer */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 
 /* Header */
 header {
-  background-color: #00274d; /* dark blue */
-  color: white;
-  padding: 20px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* Navigation bar */
-nav {
-  background-color: rgba(0, 39, 77, 0.95); /* dark blue with transparency */
-  padding: 12px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+  background: #003366;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}header h1 {
+  margin-bottom: 0.5rem;
 }
 
 nav a {
-  color: white;
+  color: #fff;
+  margin: 0 10px;
   text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
   font-weight: bold;
-  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #e10600; /* red on hover */
+  text-decoration: underline;
 }
 
-/* Buttons */
-button {
-  background-color: rgba(225, 6, 0, 0.8); /* red with transparency */
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  margin: 10px;
-  font-size: 16px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background-color: rgba(192, 4, 0, 0.9); /* darker red on hover */
-  transform: scale(1.05);
-}
-
-/* Main content box */
+/* Main Section */
 main {
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
   padding: 20px;
-  border-radius: 16px;
-  display: inline-block;
-  margin-top: 20px;
+  max-width: 900px;
+  margin: auto;
+}h2 {
+  margin-bottom: 10px;
+  color: #003366;
 }
 
-/* Footer */
-footer {
-  background-color: rgba(0, 39, 77, 0.95); /* dark blue with transparency */
-  color: white;
-  padding: 12px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+/* Live Scores List */
+#scores ul {
+  list-style: none;
+  padding: 0;
+}
+
+#scores li {
+  background: #fff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
